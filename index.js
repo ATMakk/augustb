@@ -4,7 +4,7 @@ const express = require ('express');
 const mongoose = require ('mongoose');
 require ('dotenv').config();
 const app = express();
-const connectDB = require('./database/connectDB.js');
+const connectDB = require('./database/connectDB');
 
 // Middleware to parse JSON and URL-encoded bodies
 app.use(express.json());
